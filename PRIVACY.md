@@ -30,6 +30,12 @@ When you click **Connect**, the app adds its own small entries ("hooks") to the 
 (`~/.claude/settings.json`) and Codex (`~/.codex/hooks.json`), keeps a backup copy, and removes them again when you disconnect
 or uninstall. Nothing else in those files is changed.
 
+## Getting the download link
+If you request the download link through my form, your email (and your TikTok name, if you give it) is kept in my Google
+Sheet and used only to send you the link and, if you tick the box, short news about new versions. The form is run with
+Google Forms and the email is sent from my Gmail; [Google's privacy policy](https://policies.google.com/privacy) applies there.
+To be removed, reply "stop" to any email or open an issue.
+
 ## Installing
 The install command downloads the app from this GitHub page. GitHub sees that download like any other visit; see
 [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
@@ -40,4 +46,4 @@ Claude Code, Codex and Visual Studio Code have their own privacy policies. Studi
 ## Contact
 Questions: [open an issue](https://github.com/amdacles/studio-pulse/issues). Please don't post private information there.
 
-Last updated: DATE
+Last updated: 18 November 2026
