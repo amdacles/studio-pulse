@@ -1,0 +1,45 @@
+Studio Pulse — Free Software Licence
+Copyright © 2026 Anthony Dacles. All rights reserved.
+
+Studio Pulse ("the app") is free to download and use, but it is not open source. By installing or using the app you agree to
+these terms.
+
+1. What you may do
+   You may download the app from its official GitHub page and use it, for free, on any Mac you own or control, for personal
+   or work purposes.
+
+2. What you may not do (without written permission)
+   - share, re-upload, mirror, sell, rent or bundle copies of the app; link to the official GitHub page instead;
+   - change, re-sign or repackage the app, or present it as your own;
+   - take the app apart (reverse engineer, decompile or disassemble it), except where the law allows this anyway.
+
+3. Licensed, not sold
+   You receive a licence to use the app. The app, its characters, icons, sounds and design remain the property of
+   Anthony Dacles.
+
+4. You stay in control
+   The app shows requests from coding tools you run (such as Claude Code and Codex) and passes on the answer you click.
+   You decide what to allow. The app never allows anything by itself.
+
+5. No warranty
+   The app is provided "as is", without warranty of any kind, express or implied, including fitness for a particular purpose
+   and non-infringement. Use it at your own risk.
+
+6. Limit of liability
+   To the fullest extent the law allows, Anthony Dacles is not liable for any damages arising from the use of, or inability to
+   use, the app, including lost data, lost work or lost profits.
+
+7. Ending
+   This licence ends automatically if you break these terms. You must then delete the app.
+
+8. Third-party notices
+   - GSAP 3.15.0 by GreenSock (Webflow), used under the GSAP Standard "No Charge" License: https://gsap.com/standard-license
+   - Sound "Notification Sound 1" by deadrobotmusic (Freesound 750607), CC0 1.0 (public domain):
+     https://freesound.org/people/deadrobotmusic/sounds/750607/
+
+9. Trademarks
+   Studio Pulse is not affiliated with, endorsed by or sponsored by Anthropic, OpenAI or Microsoft.
+   Claude and Claude Code are trademarks of Anthropic PBC. Codex is a trademark of OpenAI. Visual Studio Code and VS Code are
+   trademarks of Microsoft Corporation. They are named only to say what the app works with.
+
+Questions: open an issue on the app's GitHub page.

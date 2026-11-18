@@ -1,0 +1,52 @@
+name: Report a problem
+description: Something in Studio Pulse doesn't work as it should.
+title: "[Problem] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Please don't paste private chat names, folders, commands or anything secret: blur or leave them out.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Studio Pulse version
+      description: Settings › About
+      placeholder: "2.3"
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      description: Apple menu › About This Mac
+      placeholder: "macOS 27.2"
+    validations:
+      required: true
+  - type: checkboxes
+    id: tools
+    attributes:
+      label: Which tools were you using?
+      options:
+        - label: Claude Code in Visual Studio Code
+        - label: Claude Code in the Terminal
+        - label: Claude Code in the Claude desktop app
+        - label: Codex
+  - type: dropdown
+    id: install
+    attributes:
+      label: How did you install it?
+      options:
+        - The Terminal command
+        - Downloaded the zip myself
+  - type: textarea
+    id: shots
+    attributes:
+      label: Screenshots (optional)
+      description: Drag images here. Please blur anything private.
