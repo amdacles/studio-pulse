@@ -6,9 +6,8 @@ See which chats are working, which one needs your OK, and answer it with one cli
 Free. Made by Anthony Dacles.
 
 <p align="center">
-  <img src="screenshots/02_permission_white.png" width="300" alt="The panel with a permission request: Allow, Deny, Open in VS Code">
-  &nbsp;
-  <img src="screenshots/01_panel_dark.png" width="300" alt="The panel in dark mode with six chats">
+  <img src="screenshots/07_in_use.png" width="400" alt="A Mac desktop with the Studio Pulse panel floating over a code editor, asking to allow npm test">
+  <img src="screenshots/02_allow_deny.png" width="400" alt="Allow or Deny a request in one click">
 </p>
 
 ## What it does
@@ -25,11 +24,15 @@ Free. Made by Anthony Dacles.
 - **Seven characters** (Mochi, Nigi, Boo, Miso, Puff, Pip, Slate, or a mix) and three looks: Dark, White and Liquid Glass.
 
 <p align="center">
-  <img src="screenshots/03_risky_hold_dark.png" width="260" alt="A risky command in red with Hold to allow">
-  &nbsp;
-  <img src="screenshots/04_question_white.png" width="260" alt="A multiple-choice question answered in the panel">
-  &nbsp;
-  <img src="screenshots/06_characters_dark.png" width="260" alt="The seven characters">
+  <img src="screenshots/05_characters.png" width="400" alt="The seven characters: Mochi, Nigi, Boo, Miso, Puff, Pip and Slate">
+  <img src="screenshots/06_liquid_glass.png" width="400" alt="The panel in the Liquid Glass look">
+</p>
+<p align="center">
+  <img src="screenshots/01_all_chats.png" width="400" alt="All your chats in one small panel">
+  <img src="screenshots/03_hold_to_allow.png" width="400" alt="A risky command in red with Hold to allow">
+</p>
+<p align="center">
+  <img src="screenshots/04_questions.png" width="400" alt="Answering a multiple-choice question in the panel">
 </p>
 
 ## Who it's for
