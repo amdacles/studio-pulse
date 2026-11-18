@@ -33,6 +33,7 @@ Free. Made by Anthony Dacles.
 </p>
 <p align="center">
   <img src="screenshots/04_questions.png" width="400" alt="Answering a multiple-choice question in the panel">
+  <img src="screenshots/08_plain_words.png" width="400" alt="Every command explained in plain words, risky ones in red">
 </p>
 
 ## Who it's for
