@@ -14,7 +14,7 @@ VERSION="2.3.2"
 REPO="amdacles/studio-pulse"
 ZIP="Studio-Pulse-${VERSION}.zip"
 URL="https://github.com/${REPO}/releases/download/v${VERSION}/${ZIP}"
-SHA256="b79bab7a9298a5e08a4e2447e65d9c68b0f15d671b42a9d59cf688b90dcf0f55"
+SHA256="593466bc0f676f540df216d411ea82b5d2163096bd37a27081d56a146a7d272c"
 APP="Studio Pulse.app"
 
 say()  { printf '%s\n' "$*"; }
