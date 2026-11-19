@@ -1,5 +1,5 @@
 #!/bin/bash
-# Studio Pulse installer, version 2.3
+# Studio Pulse installer, version 2.3.2
 #
 # What it does, step by step:
 #   1. checks that this is a Mac with Apple silicon and macOS 13 or newer;
@@ -10,11 +10,11 @@
 # To uninstall later: Studio Pulse › Settings › About › Uninstall Studio Pulse…
 set -euo pipefail
 
-VERSION="2.3"
+VERSION="2.3.2"
 REPO="amdacles/studio-pulse"
 ZIP="Studio-Pulse-${VERSION}.zip"
 URL="https://github.com/${REPO}/releases/download/v${VERSION}/${ZIP}"
-SHA256="dd3ef4605c195abec8d9f8b9e961170fa08199162d339c67718cb10bc45d1347"
+SHA256="b79bab7a9298a5e08a4e2447e65d9c68b0f15d671b42a9d59cf688b90dcf0f55"
 APP="Studio Pulse.app"
 
 say()  { printf '%s\n' "$*"; }
@@ -24,7 +24,7 @@ stop() { printf '\nStudio Pulse was not installed: %s\n' "$*" >&2; exit 1; }
 [ "$(uname -m)" = "arm64" ]  || stop "it needs a Mac with Apple silicon (M1 or newer)."
 major="$(sw_vers -productVersion | cut -d. -f1)"
 [ "$major" -ge 13 ] || stop "it needs macOS 13 or newer (this Mac has $(sw_vers -productVersion))."
-if pgrep -x StudioPulse >/dev/null 2>&1; then
+if pgrep -u "$(id -u)" -x StudioPulse >/dev/null 2>&1; then     # this Mac user's own copy only
   stop "Studio Pulse is open. Quit it first (its menu-bar icon › Quit), then run this command again."
 fi
 

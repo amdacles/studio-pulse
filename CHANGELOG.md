@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.3 — first public release (DATE)
+## 2.3.2 — first public release (DATE)
 Studio Pulse puts every coding chat on your Mac in one small floating panel, with a little character for each chat.
 
 **Chats**
@@ -18,7 +18,7 @@ Studio Pulse puts every coding chat on your Mac in one small floating panel, wit
 - **Risky requests are red and need a one-second hold** (deleting, force-pushing, `sudo`, running a downloaded script…).
 - **Keyboard shortcuts from any app:** ⌃⌥⌘A allow the oldest request, ⌃⌥⌘D deny it, ⌃⌥⌘P show or hide the panel.
   A risky request is never allowed by a shortcut: the panel opens instead.
-- **"Needs a look" warnings:** the same command 4 times in a row, no new step for 8 minutes, a command still running.
+- **"Needs a look" warnings:** the same command 4 times in a row, no new step for 6 minutes, a command still running.
 
 **Look and feel**
 - Seven characters: Mochi, Nigi, Boo, Miso, Puff, Pip and Slate, or a mix (each chat its own).
@@ -26,6 +26,11 @@ Studio Pulse puts every coding chat on your Mac in one small floating panel, wit
 - A Mac banner and a sound when a chat needs you (each can be switched off).
 
 **Privacy and safety**
+- A command that deletes anything, anywhere in the line (inside `$( … )`, after `xargs` or `find -exec`, in a loop, in a
+  one-line script…), counts as risky: it needs the one-second hold, with the left mouse button.
+- The keyboard shortcuts only answer a request the panel is showing.
+- Each user account on the Mac has its own Studio Pulse; no other program can answer for it.
+- Quit means quit: nothing is recorded while Studio Pulse is not running.
 - Everything stays on your Mac. No account, no analytics, nothing sent online.
 - The panel talks only to its own little server on your Mac, locked with a key only your Mac user can read.
 - Uninstall removes the app, its hooks in Claude Code and Codex, its login item and all its files.

@@ -66,7 +66,7 @@ Studio Pulse is free, and I don't pay for Apple's yearly developer signature. Wi
 Claude Code installs the same way.
 
 ### Prefer to download it yourself?
-1. Download **Studio-Pulse-2.3.zip** from the [latest release](https://github.com/amdacles/studio-pulse/releases/latest)
+1. Download **Studio-Pulse-2.3.2.zip** from the [latest release](https://github.com/amdacles/studio-pulse/releases/latest)
    and double-click it.
 2. Drag **Studio Pulse** into your **Applications** folder and open it. macOS says *"Studio Pulse" Not Opened*: click **Done**.
 3. Open **System Settings › Privacy & Security**, scroll down to *"Studio Pulse" was blocked…* and click **Open Anyway**.
@@ -76,7 +76,7 @@ Claude Code installs the same way.
 ## First steps
 1. Look for the **pulse icon** in your menu bar. The panel opens.
 2. Click **Connect to Claude Code** once. Studio Pulse adds its small hooks to Claude Code's settings
-   (`~/.claude/settings.json`) and keeps a backup. Nothing else in that file changes.
+   (`~/.claude/settings.json`) and keeps a backup. Your other settings in that file stay as they are.
 3. **Codex too?** Studio Pulse's **Settings › Connections › Codex › Connect**. Then, once, inside Codex: type `/hooks`
    (in the Codex app: **Settings › Hooks**) and trust Studio Pulse's hooks. Codex only runs hooks you have approved.
 4. Start a chat. It shows up in the panel.
@@ -87,8 +87,8 @@ Codex waits up to 30 seconds for the panel, then asks in its own window.
 ## Privacy
 **Everything stays on your Mac. Nothing is sent online.** No account, no analytics, no tracking, no ads.
 - Studio Pulse keeps short notes about each chat (name, folder, current step, the command it wants to run, its to-do list)
-  in `~/Library/Application Support/Studio Pulse`. Chat notes are deleted after 3 days. A log of the answers you click stays until
-  you uninstall.
+  in `~/Library/Application Support/Studio Pulse`. Chat notes are deleted after 3 days. A log of what happened to each request
+  (what you clicked, or that it was answered elsewhere) is kept 30 days, with passwords and keys in commands blanked.
 - The panel talks only to a tiny server on your own Mac (127.0.0.1), locked with a key that only your Mac user can read.
 - It never reads, stores or sends your Claude or OpenAI sign-in.
 - It never allows anything by itself. It only passes on your click.
@@ -97,16 +97,21 @@ Details: [PRIVACY.md](PRIVACY.md).
 
 ## Known limits
 - Codex's multiple-choice questions can't be answered from the panel (Codex doesn't allow it yet). Its permissions can.
-- One-off runs (`claude -p`, `codex exec`) can't ask for permission, so there is nothing to answer.
+- One-off `codex exec` runs can't ask for permission, so there is nothing to answer. One-off `claude -p` runs can: while the
+  panel is open, each permission waits up to a minute for your click there.
 - Codex inside the VS Code extension: not tested yet.
 - ↗ uses links the Claude and Codex apps understand today. If an update changes them, ↗ just brings the app forward.
 - Claude Code and Codex updates can change how hooks work. If chats stop showing up, open Settings › Connections and connect again,
   and [tell me](https://github.com/amdacles/studio-pulse/issues).
 - Mac banners appear under "Script Editor" in System Settings › Notifications.
 
-## Uninstall
-**Studio Pulse › Settings › About › Uninstall Studio Pulse…** It removes the app, its hooks in Claude Code and Codex, its login
-item and all its files. Your chats are not touched.
+## Quit and uninstall
+**Quit** (the menu-bar icon › Quit): Studio Pulse rests until you open it again. Nothing is recorded, no banners. Can't see the
+menu-bar icon (behind the notch, say)? Open Studio Pulse again from Applications: Settings opens. The panel has a gear for it too.
+
+**Uninstall:** **Studio Pulse › Settings › About › Uninstall Studio Pulse…** It removes the app, its hooks in Claude Code and Codex,
+its login item and all its files. Your chats are not touched. Please use this rather than dragging the app to the Trash: the Trash
+leaves its hooks and files behind (they stay quiet while the app is gone, but they stay).
 
 <details>
 <summary>The app won't open? Uninstall by hand</summary>
